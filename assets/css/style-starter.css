@@ -12976,6 +12976,7 @@ span.diff {
 .btn-theme3 {
   padding: 10px 24px;
   color: var(--white-color);
+  font-family: "Poppins";
   font-size: 16px;
   text-transform: capitalize;
   font-weight: 600;
@@ -15489,7 +15490,7 @@ h4.sub-title {
 .w3-about-2 .w3-services-ab {
   background-size: cover;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white),
-    url(../images/3.jpg);
+    url(../images/3.jpeg);
   background-repeat: no-repeat, no-repeat, no-repeat;
 }
 
@@ -16282,6 +16283,7 @@ h4.sub-title {
   font-size: 15px;
   padding: 0px 15px;
   margin-bottom: 25px;
+  font-family: "Poppins";
   color: #304659;
   height: 45px;
   text-align: left;

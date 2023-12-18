@@ -60,14 +60,19 @@ Author: Moufid
             <a class="nav-link" href="index.html">Accueil</a>
           </li>
            <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="services.html">Services</a>
           </li>
-        
           <li class="nav-item">
-            <a class="nav-link" href="#">A propos</a>
+            <a class="nav-link" href="appartments.html">Nos Appartements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="servicesNetayage.htm">Services Netoyage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">A propos</a>
           </li>
           <li class="nav-item mr-0">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
        
@@ -82,43 +87,85 @@ Author: Moufid
 				<div class="column2">
 					</div>
 				<div class="column1">
-					
-					
-						<form action="/" method="Get">
+						<form action="#" method="Get">
 							<div class="blog-search form d-flex search-form">
-								<input type="search" class="form-control" placeholder="Entrez l'emplacement, la propriété, le point de repère" name="search" required="required">
+								<input type="search" class="form-control" placeholder="Entrez l'emplacement, la propriété, le point de repère" name="search">
 								<button type="submit" class="btn search-btn"><span class="fa fa-search"></span></button>
 							</div>
 							<div class="form-top">
-								<select id="sel1">
-                  <option>Toutes les actions</option>
-                  <option>Louer</option>
-                  <option>Vente</option>
-                  <option>Épuisé</option>
-								  </select>
-								  <select id="sel2">
-                    <option>Tous les types</option>
-                    <option>Appartement</option>
-                    <option>Affaires</option>
-                    <option>Maison</option>
-                    <option>Luxe</option>
-                    <option>Résidentiel</option>
-                    <option>Restaurant</option>
-                    <option>Unifamille</option>
-                    <option>Villa</option>
+								<select id="mainSelect" onchange="updateAdditionalOptions()" required>
+                  <option>Tous les services</option>
+                  <option value="Achats">Achats</option>
+                  <option value="Ventes">Ventes</option>
+                  <option value="Appartements">Appartements meublés</option>
+                  <option value="Locations">Locations</option>
+                  <option value="Gestion">Gestion locative</option>
+                  <option value="Decoration">Décoration d'intérieur</option>
+                  <option value="Plan">Plan architectural</option>
+                  <option value="Suivi">Suivi de chantier</option>
+                  <option value="Videos">Vidéos surveillance</option>
+                  <option value="Barbele">Barbelé & clôture électrique</option>
+                </select>
+                <select id="additionalSelect" required>
+                    <option>Toutes les actions</option>
+                    <option value="" disabled>Veuillez sélectionné un service d'abord</option>
 								  </select>
 								
 							</div>
-							
 							<div class="form-top">
-								<select id="sel3">
+								<select id="sel3" required>
 									<option>Toutes les villes</option>
-									<option>Cotonour</option>
-									<option>Parakou</option>
-									<option>Bohicon</option>
+									<option>Cotonou</option>
 									<option>Porto-Novo</option>
+									<option>Parakou</option>
+									<option>Abomey</option>
+                  <option>Bohicon</option>
+									<option>Kandi</option>
+                  <option>Lokossa</option>
+									<option>Ouidah</option>
+                  <option>Malanville</option>
+									<option>Natitingou</option>
+                  <option>Djougou</option>
+									<option>Save</option>
+                  <option>Tanguiéta</option>
+                  <option>Comé</option>
+									<option>Dogbo</option>
+                  <option>Bassila</option>
+									<option>Cove</option>
+                  <option>Dassa-Zoumé</option>
+									<option>Bembèrèkè</option>
+                  <option>Djougou</option>
+									<option>Save</option>
 								</select>
-								<select id="sel4">
+							</div>
+						
+              <div class="form-top">
+								<select id="sel3" required>
+									<option>Touts les quartiers</option>
+									<option>Ganhi</option>
+									<option>Saint Michel</option>
+									<option>Les cocotiers</option>
+                  <option>Haie Vive</option>
+									<option>Saint Michel</option>
+									<option>Zogbo</option>
+                  <option>Jéricho</option>
+									<option>Ganmè</option>
+									<option>Gbégamey</option>
+									<option>Missèbo</option>
+                  <option>Tanlili</option>
+                  <option>Tchatchou</option>
+									<option>Nagaza</option>
+									<option>Zongo</option>
+									<option>Gbokpè</option>
+                  <option>Zounzoukpa</option>
+									<option>Agongointo</option>
+                  <option>Houndjro</option>
+                  <option>Akpakpa</option>
+									<option>Zongo</option>
+									<option>Gbeto</option>
+									<option>Zongo</option>
+								</select>
+								<!-- <select id="sel4">
 									<option>Nombre minimum de chambres</option>
 									<option>Toutes les chambres</option>
 									<option>1</option>
@@ -128,12 +175,10 @@ Author: Moufid
 									<option>5</option>
 									<option>6</option>
 									<option>7</option>
-								</select>
-						
+								</select> -->
 							</div>
-						
 							
-							<button type="submit" class="btn">Submit</button>
+							<button type="submit" class="btn">Envoyer</button>
 						</form>
 					</div>
 				
@@ -145,7 +190,7 @@ Author: Moufid
 <div class="locations py-5">
  <div class="container py-md-3">
     <div class="heading text-center mx-auto">
-        <h3 class="head">Lieux populaires</h3>
+        <h3 class="head">Quartier populaires</h3>
         <p class="my-3 head ">Lorem ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
           Nulla mollis dapibus nunc, ut rhoncus
           turpis sodales quis. Integer sit amet mattis quam.</p>
@@ -572,7 +617,7 @@ Author: Moufid
                   <img class="card-img-top img-responsive" src="assets/images/c3.jpg" alt="">
                   <div class="card-body">
                     <span class="fa fa-quote-left" aria-hidden="true"></span>
-                    <h3 class="card-title">Sarina Willams</h3>
+                    <h3 class="card-title">Hanif Wabi</h3>
                     <p class="sub-title mb-3">Compatable</p>
                     <p class="card-text text-center mb-4">  Lorem ipsum dolor sit amet, Ea consequuntur illum facere aperiam sequi optio
                      </p>
@@ -590,7 +635,7 @@ Author: Moufid
                   <img class="card-img-top img-responsive" src="assets/images/c1.jpg" alt="">
                   <div class="card-body">
                     <span class="fa fa-quote-left" aria-hidden="true"></span>
-                    <h3 class="card-title">Henry Nicholas</h3>
+                    <h3 class="card-title">Henry DANDJOU</h3>
                     <p class="sub-title mb-3">Dévéloppeur
                     <p class="card-text text-center mb-4">  Lorem ipsum dolor sit amet, Ea consequuntur illum facere aperiam sequi optio
                     </p>
@@ -612,7 +657,7 @@ Author: Moufid
                     <img class="card-img-top img-responsive" src="assets/images/c3.jpg" alt="">
                     <div class="card-body">
                       <span class="fa fa-quote-left" aria-hidden="true"></span>
-                      <h3 class="card-title">Sarina Willams</h3>
+                      <h3 class="card-title">Abel DEGARDE</h3>
                       <p class="sub-title mb-3">Graphiste</p>
                       <p class="card-text text-center mb-4">  Lorem ipsum dolor sit amet, Ea consequuntur illum facere aperiam sequi optio
                        </p>
@@ -628,7 +673,7 @@ Author: Moufid
                     <img class="card-img-top img-responsive" src="assets/images/c2.jpg" alt="">
                     <div class="card-body">
                       <span class="fa fa-quote-left" aria-hidden="true"></span>
-                      <h3 class="card-title">Mark Waugh</h3>
+                      <h3 class="card-title">Mark ADJOVI</h3>
                       <p class="sub-title mb-3">Chef projet</p>
                       <p class="card-text text-center mb-4">  Lorem ipsum dolor sit amet, Ea consequuntur illum facere aperiam sequi optio
                       </p>
@@ -645,7 +690,7 @@ Author: Moufid
                     <img class="card-img-top img-responsive" src="assets/images/c1.jpg" alt="">
                     <div class="card-body">
                       <span class="fa fa-quote-left" aria-hidden="true"></span>
-                      <h3 class="card-title">Henry Nicholas</h3>
+                      <h3 class="card-title">Carl OKE</h3>
                       <p class="sub-title mb-3">PDG </p>
                       <p class="card-text text-center mb-4">  Lorem ipsum dolor sit amet, Ea consequuntur illum facere aperiam sequi optio
                       </p>
@@ -695,14 +740,14 @@ Author: Moufid
                 <div class="grids-speci1 las-but col-lg-3 col-6  mt-lg-0 mt-4">
                     <div class="spec-2 text-center">
                     <span class="fa fa-building"></span>
-                    <h3 class="title-spe">250+</h3>
+                    <h3 class="title-spe">150+</h3>
                     <p>Propriété à vendre</p>
                     </div>
                 </div>
                 <div class="grids-speci1 las-t col-lg-3 col-6  mt-lg-0 mt-4">
                     <div class="spec-2 text-center">
                      <span class="fa fa-home"></span>
-                        <h3 class="title-spe">3200+ </h3>
+                        <h3 class="title-spe">220+ </h3>
                         <p>Propriété A louer</p>
                         </div>
                     </div>
@@ -736,7 +781,8 @@ Author: Moufid
         
           <div class="d-grid grid-col-4 footer-top-29">
               <div class="footer-list-29 footer-1">
-                  <h6 class="footer-title-29">À propos de nous</h6>
+                  <h6 clas							
+                  s="footer-title-29">À propos de nous</h6>
                   <ul>
                      <p>Lorem ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
                   </ul>
@@ -811,6 +857,121 @@ Author: Moufid
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <!-- //footer-28 block -->
 </section>
+
+<script>
+  function updateAdditionalOptions() {
+      const mainSelect = document.getElementById('mainSelect');
+      const additionalSelect = document.getElementById('additionalSelect');
+      additionalSelect.innerHTML = '';
+      const selectedOption = mainSelect.value;
+      switch (selectedOption) {
+          case 'Achats':
+              addOption(additionalSelect, 'subOption1', 'Parcelles vides');
+              addOption(additionalSelect, 'subOption2', 'Parcelles avec petit bati');
+              addOption(additionalSelect, 'subOption3', 'Appartements');
+              addOption(additionalSelect, 'subOption4', 'Maisons');
+              addOption(additionalSelect, 'subOption5', 'Villa');
+              addOption(additionalSelect, 'subOption6', 'Appartements meublés de luxe');
+              addOption(additionalSelect, 'subOption7', 'Appartements meublés plein pied');
+              addOption(additionalSelect, 'subOption8', "Appartements meublés T1 Bis");
+              addOption(additionalSelect, 'subOption9', 'Appartements meublés duplex');
+              addOption(additionalSelect, 'subOption10', 'Appartements meublés T1');
+              addOption(additionalSelect, 'subOption11', 'Appartements meublés T2');
+              addOption(additionalSelect, 'subOption12', 'Appartements meublés T3');
+              addOption(additionalSelect, 'subOption13', "Achat d'équippements de vidéos de surveillance");
+              break;
+
+          case 'Ventes':
+              addOption(additionalSelect, 'subOption1', 'Parcelles vides');
+              addOption(additionalSelect, 'subOption2', 'Parcelles avec petit bati');
+              addOption(additionalSelect, 'subOption3', 'Appartements');
+              addOption(additionalSelect, 'subOption4', 'Maisons');
+              addOption(additionalSelect, 'subOption5', 'Villa');
+              addOption(additionalSelect, 'subOption6', 'Appartements meublés de luxe');
+              addOption(additionalSelect, 'subOption7', 'Appartements meublés plein pied');
+              addOption(additionalSelect, 'subOption8', "Appartements meublés T1 Bis");
+              addOption(additionalSelect, 'subOption9', 'Appartements meublés duplex');
+              addOption(additionalSelect, 'subOption10', 'Appartements meublés T1');
+              addOption(additionalSelect, 'subOption11', 'Appartements meublés T2');
+              addOption(additionalSelect, 'subOption12', 'Appartements meublés T3');
+              break;
+
+          case 'Appartements':
+            addOption(additionalSelect, 'subOption1', 'Appartements meublés de luxe');
+            addOption(additionalSelect, 'subOption2', 'Appartements meublés plein pied');
+            addOption(additionalSelect, 'subOption3', "Appartements meublés T1 Bis");
+            addOption(additionalSelect, 'subOption4', 'Appartements meublés duplex');
+            addOption(additionalSelect, 'subOption5', 'Appartements meublés T1');
+            addOption(additionalSelect, 'subOption6', 'Appartements meublés T2');
+            addOption(additionalSelect, 'subOption7', 'Appartements meublés T3');
+            break;
+
+          case 'Locations':
+              addOption(additionalSelect, 'subOption1', 'Appartements');
+              addOption(additionalSelect, 'subOption2', 'Maisons');
+              addOption(additionalSelect, 'subOption3', 'Villa');
+              addOption(additionalSelect, 'subOption4', 'Appartements meublés de luxe');
+              addOption(additionalSelect, 'subOption5', 'Appartements meublés plein pied');
+              addOption(additionalSelect, 'subOption6', "Appartements meublés T1 Bis");
+              addOption(additionalSelect, 'subOption7', 'Appartements meublés duplex');
+              addOption(additionalSelect, 'subOption8', 'Appartements meublés T1');
+              addOption(additionalSelect, 'subOption9', 'Appartements meublés T2');
+              addOption(additionalSelect, 'subOption10', 'Appartements meublés T3');
+            break;
+
+          case 'Gestion':
+            addOption(additionalSelect, 'subOption1', 'Affaires');
+            addOption(additionalSelect, 'subOption2', 'Proposer un(s) service(s)');
+            break;
+
+          case 'Decoration':
+            addOption(additionalSelect, 'subOption1', 'Tableau de décoration');
+            addOption(additionalSelect, 'subOption2', 'Conseil en Décoration');
+            addOption(additionalSelect, 'subOption3', "Design d'Intérieur");
+            addOption(additionalSelect, 'subOption4', 'Décoration Résidentielle');
+            addOption(additionalSelect, 'subOption5', 'Peinture et Revêtements Muraux');
+            addOption(additionalSelect, 'subOption6', 'Conception de Mobilier');
+            addOption(additionalSelect, 'subOption7', "Stylisme d'Accessoires");
+            addOption(additionalSelect, 'subOption8', "Conception d'Espaces Extérieurs");
+            addOption(additionalSelect, 'subOption9', 'Conception de Présentoirs et Vitrines');
+            addOption(additionalSelect, 'subOption10', 'Conception de Mobilier');
+            break;
+
+          case 'Plan':
+            addOption(additionalSelect, 'subOption1', "Vues en plan (plan côtés; plan aménagé , plan d'électricité, plan de plomberie ;etc)");
+            addOption(additionalSelect, 'subOption2', 'Calcul de structure');
+            addOption(additionalSelect, 'subOption3', "Permis de construction");
+            break;
+
+          case 'Suivi':
+            addOption(additionalSelect, 'subOption1', "Suivi de chantier (Nous garantissons que le projet avance conformément aux plans, aux spécifications et aux délais)");
+            break;
+
+          case 'Videos':
+            addOption(additionalSelect, 'subOption1', "Achat d'équippements");
+            addOption(additionalSelect, 'subOption2', 'Achat & Installations');
+            addOption(additionalSelect, 'subOption3', 'Suivie & Maintenance');
+            addOption(additionalSelect, 'subOption3', 'Installations');
+            break;
+
+          case 'Barbele':
+            addOption(additionalSelect, 'subOption1', "Achat d'équippements");
+            addOption(additionalSelect, 'subOption2', 'Achat & Installations');
+            addOption(additionalSelect, 'subOption3', 'Maintenance');
+            addOption(additionalSelect, 'subOption3', 'Installations');
+            break;
+    }
+  }
+
+  // Fonction utilitaire pour ajouter une option à un élément select
+  function addOption(selectElement, value, text) {
+      const option = document.createElement('option');
+      option.value = value;
+      option.text = text;
+      selectElement.add(option);
+  }
+</script>
+
 
 <script>
     $(function () {
