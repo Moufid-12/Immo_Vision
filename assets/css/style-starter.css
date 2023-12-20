@@ -1,6 +1,5 @@
 /*--
-Author: W3layouts
-Author URL: http://w3layouts.com
+Author: Moufid
 --*/
 @charset "UTF-8";
 /*!
@@ -14712,7 +14711,7 @@ h4.sub-title {
 }
 
 .w3l-services2 p {
-  color: #d0d0d0;
+  color: white;
   margin-top: 10px;
   font-size: 16px;
   line-height: 24px;
@@ -15489,7 +15488,7 @@ h4.sub-title {
 /*--services --*/
 .w3-about-2 .w3-services-ab {
   background-size: cover;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white),
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(68, 68, 68)),
     url(../images/3.jpeg);
   background-repeat: no-repeat, no-repeat, no-repeat;
 }
