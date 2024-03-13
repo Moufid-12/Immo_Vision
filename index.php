@@ -301,77 +301,77 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script
 <script type="text/javascript"
 src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <section class="locations-1" id="locations">
-<div class="locations py-5">
- <div class="container py-md-3">
-    <div class="heading text-center mx-auto">
-        <h3 class="head">Quartier populaires</h3>
-        <p class="my-3 head ">Explorez les quartiers pour de longs séjours, souvent à des tarifs réduits au mois..</p>
-      </div>
-            <div class="row mt-3 pt-5">
-                <div class="col-md-4 col-sm-6">
-                    <div class="box16">
-                        <img class="img-fluid" src="assets/images/g1.jpg" alt="">
-                        <div class="box-content">
-                            <h3 class="title">Fidjrossè</h3>
-                            <span class="post">2 Annonces</span>
-                           
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="box16">
-                        <img class="img-fluid" src="assets/images/g2.jpg" alt="">
-                        <div class="box-content">
-                            <h3 class="title">Cadjehoun</h3>
-                            <span class="post">2 Annonces</span>
-                           
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 mt-lg-0 pt-lg-0 mt-md-4 pt-md-2">
-                    <div class="box16">
-                        <img class="img-fluid" src="assets/images/g3.jpg" alt="">
-                        <div class="box-content">
-                            <h3 class="title">Saint-Michel</h3>
-                            <span class="post">2 Annonces</span>
-                           
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 mt-md-4 pt-md-2">
-                    <div class="box16">
-                        <img class="img-fluid" src="assets/images/g4.jpg" alt="">
-                        <div class="box-content">
-                            <h3 class="title">Apkapka</h3>
-                            <span class="post">2 Annonces</span>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 mt-md-4 pt-md-2">
-                    <div class="box16">
-                        <img class="img-fluid" src="assets/images/g5.jpg" alt="">
-                        <div class="box-content">
-                            <h3 class="title">Aibation</h3>
-                            <span class="post">2 Annonces</span>
-                           
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 mt-md-4 pt-md-2">
-                    <div class="box16">
-                        <img class="img-fluid" src="assets/images/g6.jpg" alt="">
-                        <div class="box-content">
-                            <h3 class="title">Bohicon</h3>
-                            <span class="post">2 Annonces</span>
-                           
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="locations py-5">
+    <div class="container py-md-3">
+      <div class="heading text-center mx-auto">
+          <h3 class="head">Quartier populaires</h3>
+          <p class="my-3 head ">Explorez les quartiers pour de longs séjours, souvent à des tarifs réduits au mois..</p>
         </div>
-	 </div>
- </section>
+              <div class="row mt-3 pt-5">
+                  <div class="col-md-4 col-sm-6">
+                      <div class="box16">
+                          <img class="img-fluid" src="assets/images/g1.jpg" alt="">
+                          <div class="box-content">
+                              <h3 class="title">Fidjrossè</h3>
+                              <span class="post">2 Annonces</span>
+                            
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6">
+                      <div class="box16">
+                          <img class="img-fluid" src="assets/images/g2.jpg" alt="">
+                          <div class="box-content">
+                              <h3 class="title">Cadjehoun</h3>
+                              <span class="post">2 Annonces</span>
+                            
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 mt-lg-0 pt-lg-0 mt-md-4 pt-md-2">
+                      <div class="box16">
+                          <img class="img-fluid" src="assets/images/g3.jpg" alt="">
+                          <div class="box-content">
+                              <h3 class="title">Saint-Michel</h3>
+                              <span class="post">2 Annonces</span>
+                            
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 mt-md-4 pt-md-2">
+                      <div class="box16">
+                          <img class="img-fluid" src="assets/images/g4.jpg" alt="">
+                          <div class="box-content">
+                              <h3 class="title">Apkapka</h3>
+                              <span class="post">2 Annonces</span>
+                              
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 mt-md-4 pt-md-2">
+                      <div class="box16">
+                          <img class="img-fluid" src="assets/images/g5.jpg" alt="">
+                          <div class="box-content">
+                              <h3 class="title">Aibation</h3>
+                              <span class="post">2 Annonces</span>
+                            
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 mt-md-4 pt-md-2">
+                      <div class="box16">
+                          <img class="img-fluid" src="assets/images/g6.jpg" alt="">
+                          <div class="box-content">
+                              <h3 class="title">Bohicon</h3>
+                              <span class="post">2 Annonces</span>
+                            
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  </div>
+</section>
 <section class="w3l-services2" id="services">
 			<div class="features-with-17_sur py-5">
 				   <div class="container py-md-3">
@@ -458,7 +458,7 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script
     </div>
             <div class="row mt-5 pt-3">
                 <div class="grids4-info  col-lg-4 col-md-6">
-                        <a href="#"><img src="assets/images/g7.jpg" class="img-fluid" alt="Image" id=""></a>
+                        <a href="details_articles.php" onclick="saveImage('assets/images/g7.jpg')"><img src="assets/images/g7.jpg" class="img-fluid" alt="Image" id=""></a>
                         <ul class="location-top">
                             <li class="rent">A louer</li>
                             <li class="open-1">Journée portes ouvertes</li>
@@ -466,7 +466,7 @@ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script
                         <div class="info-bg">
                           <div class="row">
                             <div class="col-md-8"><h5><a href="#">Luxury Appartement </a></h5></div>
-                            <div class="col-md-4"><p style="margin-top: 1px;">Ref 129</p></div>
+                            <div class="col-md-4"><p style="margin-top: 1px;">Ref 229</p></div>
                           </div>
                           <p> 4 photos </p>
                             <p> 450,00 FCFA / par mois </p>
